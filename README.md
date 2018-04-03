@@ -4,7 +4,7 @@ This repo contains the current models for [Runway](https//runwayml.com)
 
 ## Models
 
-### Implemented
+### Implemented
 
 - [im2txt](https://github.com/tensorflow/models/tree/master/research/im2txt)
 - [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) (based on [tf-openpose](https://github.com/ildoonet/tf-pose-estimation))
@@ -21,6 +21,6 @@ This repo contains the current models for [Runway](https//runwayml.com)
 
 ## How models work in Runway
 
-## Deploying as stand-alone apps
+## Deploying as stand-alone apps
 
 ## Contributing
