@@ -1,0 +1,13 @@
+argparse
+matplotlib
+scipy
+tqdm
+requests
+fire
+dill
+Flask
+flask-cors
+pillow
+gevent
+flask-socketio
+git+https://github.com/ppwwyyxx/tensorpack.git
