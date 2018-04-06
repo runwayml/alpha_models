@@ -163,7 +163,7 @@ For instance, this is the current implementation of im2txt:
 
 ## Deploying as stand-alone apps
 
-Since each container is just a server, 
+More on this soon.
 
 ## Contributing
 
