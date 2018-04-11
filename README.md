@@ -4,13 +4,13 @@
 
 # Runway Models
 
-This repo contains the current public models for [Runway](https//runwayml.com) that you can use from the app.
+This repository contains the current public models for [Runway](https//runwayml.com) that you can use from the app or as a standalone application.
 
-## About
+## Structure
 
-`models.js` is the file that Runway queries when opened. It has all the necessary information to create and install models within the Runway.
+`models.js` is the file that Runway requires when opened. It has all the necessary information to create and install models when running the Runway app.
 
-Each model lives in its own folder and has its own configurations.
+Each model lives in its own folder and has its own configurations. See below for more detailed information.
 
 ## Status
 
@@ -37,7 +37,7 @@ Each model is a docker container thats creates a public HTTP socket server. Cont
 
 ### Server 
 
-Models running inside Docker can be work in any language or framework. They just need to be accesible through a public url. A server with socket connection must be created. 
+Models running inside Docker can work in any language or framework. They just need to be accessible through a public url. A server with socket connection must be created. The file `server_template.py` is a blueprint of the minimum requirements for 
 
 ### models.js 
 
