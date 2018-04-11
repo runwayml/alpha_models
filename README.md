@@ -37,7 +37,7 @@ Each model is a docker container thats creates a public HTTP socket server. Cont
 
 ### Server 
 
-Models running inside Docker can work in any language or framework. They just need to be accessible through a public url. A server with socket connection must be created. The file `server_template.py` is a blueprint of the minimum requirements for 
+Models running inside Docker can work in any language or framework. They just need to be accessible through a public url. A server with socket connection must be created. The file `server_template.py` is a blueprint of the minimum requirements for a Runway server.
 
 ### models.js 
 
