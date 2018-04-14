@@ -4,7 +4,7 @@
 
 # Runway Models
 
-This repository contains the current public models for [Runway](https//runwayml.com) that you can use from the app or as a standalone application.
+This repository contains the current public models for [Runway](https//runwayml.com). This models are the ones you can use from the app or as a standalone application.
 
 ## Structure
 
@@ -22,12 +22,6 @@ Each model lives in its own folder and has its own configurations. See below for
 ### In Progress
 
 - [YOLO](https://pjreddie.com/darknet/yolo/)
-
-### Wish List
-
-- DeepSpeech
-- pix2pixHD
-- Detectron
 
 ## How models work in Runway
 
