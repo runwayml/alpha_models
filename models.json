@@ -77,7 +77,8 @@
         "event": "update_response"
       },
       "format": {
-        "data": "data:image/jpg;base64,"
+        "data": "data:image/jpg;base64,",
+        "model": "mobilenet_thin"
       }
     },
     "size": ["2.69", "GB"],
