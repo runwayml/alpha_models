@@ -18,10 +18,12 @@ Each model lives in its own folder and has its own configurations. See below for
 
 - [im2txt](https://github.com/tensorflow/models/tree/master/research/im2txt)
 - [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) (based on [tf-openpose](https://github.com/ildoonet/tf-pose-estimation))
+- [YOLO](https://pjreddie.com/darknet/yolo/)
 
 ### In Progress
 
-- [YOLO](https://pjreddie.com/darknet/yolo/)
+- [Tensorflow Object Detection]()
+- [Densecap]()
 
 ## How models work in Runway
 
