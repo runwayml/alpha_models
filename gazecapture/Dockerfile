@@ -27,4 +27,7 @@ RUN pip install -r requirements.txt
 
 EXPOSE 33000
 
+# Copy the directory
+COPY ./src /root/src/
+
 ENTRYPOINT python ./src/server.py

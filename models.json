@@ -169,17 +169,33 @@
     "inputs": ["Image", "Video"]
   },
   {
-    "containerId": "00",
-    "available": false,
-    "tag": "",
-    "name": "pix2pixHD",
+    "containerId": "2521b5010a8a",
+    "available": true,
+    "tag": "cvalenzuelab/gaze:latest",
+    "name": "GazeCapture",
     "specs": {
-      "cpu": false,
+      "cpu": true,
       "gpu": true
     },
-    "size": "",
+    "port": "33400",
+    "query": {
+      "http": {
+        "route": "test",
+        "method": "get",
+        "type": "JSON"
+      },
+      "socket": {
+        "namespace": "query",
+        "emit": "update_request",
+        "event": "update_response"
+      },
+      "format": {
+        "data": "data:image/jpg;base64,"
+      }
+    },
+    "size": ["2.01", "GB"],
     "options": {
-      "image": "",
+      "image": "2521b5010a8a",
       "Tty": false,
       "Detach": true,
       "ExposedPorts": { "33000/tcp": {} },
@@ -188,20 +204,25 @@
         "PortBindings": {
           "33000/tcp": [{
             "HostIP": "0.0.0.0",
-            "HostPort": "33000"
+            "HostPort": "33400"
           }]
         }
       }
     },
-    "shortDescription": "",
-    "description": "",
-    "developer": "",
-    "company": "",
-    "framework": "",
-    "docker": "",
-    "github": "",
-    "url": "",
-    "inputs": []
+    "needsTraining": false,
+    "description": {
+      "first": "Eye tracking using the first large-scale dataset for eye tracking, containing data from over 1450 people consisting of almost 2.5M frames.",
+      "second": "From scientific research to commercial applications, eye tracking is an important tool across many domains. Despite its range of applications, eye tracking has yet to become a pervasive technology. This model can put the power of eye tracking in everyone's palm by building eye tracking software that works on commodity hardware such as mobile phones and tablets, without the need for additional sensors or devices.",
+      "third": "This model achieves a prediction error of 1.7cm and 2.5cm without calibration on mobile phones and tablets respectively. With calibration, this is reduced to 1.3cm and 2.1cm.",
+      "authors": "Kyle Krafka and Aditya Khosla and Petr Kellnhofer and Harini Kannan and Suchendra Bhandarkar and Wojciech Matusik and Antonio Torralba",
+      "image": "https://raw.githubusercontent.com/runwayml/models/master/gazecapture/images/demo.png",
+      "organization": "CSAILVision",
+      "framework": "Caffe",
+      "github": "https://github.com/CSAILVision/GazeCapture",
+      "paper": "http://gazecapture.csail.mit.edu/",
+      "licence": "Copyright (c) 2017 - Kyle Krafka, Aditya Khosla, Petr Kellnhofer, Harini Kannan, Suchendra Bhandarkar, Wojciech Matusik, and Antonio Torralba."
+    },
+    "inputs": ["Image", "Video"]
   },
   {
     "containerId": "00",
