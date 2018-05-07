@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Runway: Gaze Demo</title>
+  <!-- We are using socket.io to establish a socket connection to Runway -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <style>
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  video{
+    display:block
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Information about the model -->
+  <div>
+
+  </div>
+
+  <!-- Connection status -->
+  <p id="status">Not Connected</p>
+
+  <!-- Camera -->
+  <h3>Camera</h3>
+  <video width="300" height="280"></video>
+
+  <!-- Canvas: Just to send base64 images to Runway -->
+  <canvas width="300" height="280" style="display: none;"></canvas>
+
+  <!-- Control Buttos -->
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+
+  <!-- Result -->
+  <p>Result: <span id="log"></span></p>
+
+  <!-- The main script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+docker run -it -d=false --rm -p 33000:33000 -v $PWD/src:/root/src/ gaze
