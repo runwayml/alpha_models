@@ -1,0 +1,6 @@
+- [ ] Extract a bunch of sample images for blog post and video
+- [ ] Write blog post about code and results so far
+- [ ] Submit staging area request with video
+- [ ] Design physical dimensions
+- [ ] Order ball bearings, motors
+- [ ] Convert to video based system
