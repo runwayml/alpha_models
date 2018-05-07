@@ -35,7 +35,8 @@ def main(input_img):
 
   results = []
   for gaze_detected in estimated_gazes:
-    results.append(gaze_detected.tolist())
+    if gaze_detected is not None:
+      results.append(gaze_detected.tolist())
 
   parsed_results = {
     "estimated_gazes": results
@@ -72,4 +73,4 @@ def new_request(request):
 
 # Run the app
 if __name__ == "__main__":
-  socketio.run(app, host='0.0.0.0', port=PORT, debug=True)
+  socketio.run(app, host='0.0.0.0', port=PORT, debug=False)
