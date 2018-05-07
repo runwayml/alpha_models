@@ -15,10 +15,6 @@ RUN wget https://github.com/CSAILVision/GazeCapture/raw/master/models/mean_image
 ENV MODEL_DIR="/root/data/"
 ENV OPENCV_DATA="/root/data/"
 
-ADD setup_zero_mq.sh setup_zero_mq.sh 
-
-RUN ./setup_zero_mq.sh
-
 ENV GPU='false'
 
 ADD requirements.txt requirements.txt
