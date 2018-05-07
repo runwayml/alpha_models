@@ -7,6 +7,7 @@ from PIL import Image as PILImage
 from flask import Flask, jsonify
 from flask_cors import CORS
 from flask_socketio import SocketIO, emit
+import lib
 
 import features
 import gaze
@@ -33,16 +34,7 @@ def main(input_img):
   img, faces, face_features = features.extract_image_features(bgr_image)
   estimated_gazes = gaze.test_faces(img, faces, face_features)
 
-  results = []
-  for gaze_detected in estimated_gazes:
-    if gaze_detected is not None:
-      results.append(gaze_detected.tolist())
-
-  parsed_results = {
-    "estimated_gazes": results
-  }
-
-  return parsed_results
+  return lib.to_output_json(faces, face_features, estimated_gazes)
 
 # Base route, functions a simple testing
 @app.route('/')

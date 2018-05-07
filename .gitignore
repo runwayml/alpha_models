@@ -1,0 +1,7 @@
+**/*/.ipynb_checkpoints
+__pycache__
+**/*/*.jpg
+**/*/*.gif
+js/node_modules
+**/*/*.autosave
+**/*/*.pyc

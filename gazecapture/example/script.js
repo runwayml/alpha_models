@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // When there is new data coming in, update the log element
   socket.on('update_response', function(data) {
-    console.log(data.results.estimated_gazes);
+    console.log(data.results);
     if (shouldLoop) {
       sendImage();
     }
