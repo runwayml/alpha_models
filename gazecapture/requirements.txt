@@ -1,0 +1,7 @@
+requests
+Flask
+flask-cors
+opencv-python
+gevent
+flask-socketio
+zmq
