@@ -39,3 +39,41 @@ def smooth_outputs(outputs, frame_time, previous_outputs, previous_frame_time):
             smoothed_outputs.append(output)
 
     return smoothed_outputs
+
+def to_int_list(numpy_list):
+    return map(lambda x: int(x), numpy_list)
+
+def to_face_json(face):
+    if face is None:
+        return None
+
+    return to_int_list(face)
+
+def to_eye_json(eyes, index):
+    if eyes is None:
+        return None
+    if (len(eyes) < index + 1):
+        return None
+    return to_int_list(eyes[index])
+
+def to_gaze_json(gaze):
+    if gaze is None:
+        return None
+
+    return gaze.tolist()
+
+def to_output_json(faces, face_features, gazes):
+    results = []
+    for i, face in enumerate(faces):
+        eyes, face_grid = face_features[i]
+        result = {
+            'face': to_face_json(face),
+            'eye_left': to_eye_json(eyes, 0),
+            'eye_right': to_eye_json(eyes, 1),
+            'gaze': to_gaze_json(gazes[i])
+        }
+        results.append(result)
+
+    print(results)
+    return results
+
