@@ -2,7 +2,7 @@
 <img src="utils/icon.png" width="100">
 </p>
 
-# Runway Models
+# Runway Models for the alpha version
 
 This repository contains the current public models for [Runway](https//runwayml.com). This models are the ones you can use from the app or as a standalone application.
 
